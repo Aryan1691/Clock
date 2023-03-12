@@ -1,0 +1,40 @@
+#clock{
+    background-color: white;
+    width: 235px;
+    color: black;
+    height: 235px;
+    border: 10px solid dimgrey;
+    border-radius: 108px;
+    position: relative;
+    margin: auto;
+    margin-top: 200px;
+}
+.hand{
+    background-color: black;
+    width: 111px;
+    height: 3px;
+    position: absolute;
+    top: 51%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    right: 48.1%;
+    transition-timing-function: cubic-bezier(0.1, 2.08, 1, 1);
+}
+
+body{
+    background-image: url("images/background.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 109% 93%;
+    overflow: hidden;
+    animation-name: slow;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes slow {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
