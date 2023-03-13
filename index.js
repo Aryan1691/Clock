@@ -29,4 +29,4 @@ function getdate(){
 
 setInterval(() => {
    getdate() 
-}, 1000);
+}, 1000);   
